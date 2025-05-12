@@ -1,17 +1,3 @@
-/* Global Styles */
-:root {
-    --dark-bg: #141a26;
-    --text-color: #ffffff;
-    --accent-green: #30d886;
-    --accent-blue: #36a6f9;
-    --button-dark: #1b202c;
-    --light-bg: #ffffff;
-    --pink-accent: #e0417b;
-    --purple-accent: #6052cd;
-    --gray-bg: #f8f9fa;
-    --footer-bg: #141a26; /* Same as header dark bg */
-} 
-
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
@@ -25,7 +11,7 @@ body {
     padding: 0 15px;
 }
 
-/* Header Styles */
+
 .header {
     background-color: #141f2d;
     padding: 25px 0;
@@ -66,7 +52,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Hero Section */
+
 .hero-section {
     background-color: #141f2d;
     color: #ffffff;
@@ -150,7 +136,7 @@ body {
     background-color: #30333f
 }
 
-/* Styles for the placeholder screenshot */
+
 .placeholder-screenshot {
     width: 100%;
     background-color: #1e2433;
@@ -206,7 +192,7 @@ body {
     margin-top: 20px;
 }
 
-/* Clients Section */
+
 
 .companies-section {
     padding: 90px 0;
@@ -276,13 +262,13 @@ body {
     text-decoration: underline;
 }
 
-/* Auto-Update Section */
+
 .work-section .container{
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
-/* Features */
+
 .feature-grid-section {
     padding: 100px 0;
 }
@@ -326,7 +312,7 @@ body {
     color: #666;
 }
 
-/* Testimonials 2 Section */
+
 .testimonials-section {
     background-color: #ffffff;
     padding: 100px 0;
@@ -340,7 +326,7 @@ body {
 .testimonial-card {
     background-color: white;
     border-radius: 6px;
-    border: 1px solid #e1e8ed;  /* Twitter's typical border color circa 2015 */
+    border: 1px solid #e1e8ed;  
     padding: 15px 20px 5px 20px;
     margin-bottom: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -349,7 +335,7 @@ body {
     height: 100%;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 14px;
-    color: #292f33;  /* Twitter's text color circa 2015 */
+    color: #292f33;  
 }
 
 .testimonial-card:hover {
@@ -417,7 +403,7 @@ body {
     min-height: 30px;
 }
 
-/* FAQ Section */
+
 .faq-section {
     background-color: #ffffff;
     padding: 90px 0;
@@ -456,7 +442,7 @@ body {
     text-decoration: underline;
 }
 
-/* Buy Section */
+
 .buy-section {
     background-color: #f2f2f2;
     padding: 90px 0;
@@ -466,7 +452,7 @@ body {
     padding-top: 20px;
 }
 
-/* Subscribe Section */
+
 .subscribe-section {
     background-color: #ffffff;
     padding: 70px 0;
@@ -504,7 +490,7 @@ body {
     background-color: #2bc576;
 }
 
-/* Footer Section */
+
 .footer-section {
     background-color: #141a26;
     color: #ffffff;
@@ -547,3 +533,310 @@ body {
 .footer-social .social-icon:hover {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    
+    body {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%; 
+        text-size-adjust: 100%; 
+    }
+
+    .container {
+        padding: 0 20px; 
+    }
+
+    
+    .header {
+        padding: 15px 0;
+    }
+    
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header .logo {
+        margin-bottom: 15px; 
+    }
+    
+    .header nav { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-item {
+        margin-left: 0;
+        margin: 8px 0; 
+        display: block; 
+        text-align: center;
+        padding: 5px 0; 
+    }
+    .button-trial {
+        margin-left: 0;
+        margin-top: 10px;
+        display: block; 
+        margin: 10px auto;
+        padding: 8px 18px; 
+    }
+
+    
+    .hero-section {
+        padding-top: 40px;
+        padding-bottom: 40px; 
+    }
+    .main-heading {
+        font-size: 32px; 
+        margin-bottom: 20px;
+    }
+    .sub-heading {
+        font-size: 14px; 
+        max-width: 90%; 
+        margin-bottom: 25px;
+    }
+    .cta-buttons {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .button {
+        margin: 8px 0; 
+        width: 80%; 
+        max-width: 320px;
+        padding: 14px 25px; 
+    }
+    .app-screenshot {
+        max-width: 100%; 
+    }
+    .window-controls {
+        padding: 0 10px;
+    }
+
+    
+    .companies-section {
+        padding: 50px 0;
+    }
+    .section-heading {
+        font-size: 28px; 
+        margin-bottom: 15px; 
+        text-align: center; 
+    }
+    .section-subheading {
+        font-size: 14px;
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+    .client-logos-container {
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 20px;
+    }
+    .company-logo {
+        margin-bottom: 25px; 
+        max-width: 110px; 
+    }
+    .company-logo img {
+        max-width: 100%; 
+        max-height: none; 
+    }
+
+    .work-section .container{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .feature-heading {
+        font-size: 24px; 
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .feature-text {
+        font-size: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+
+    .feature-grid-section {
+        padding: 50px 0;
+    }
+    .feature-row {
+        margin-top: 0; 
+    }
+    .feature-box {
+        margin-bottom: 25px; 
+        padding: 25px 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+    }
+    .feature-box:last-child {
+        margin-bottom: 0;
+    }
+    .feature-title {
+        font-size: 19px;
+        text-align: center;
+    }
+    .feature-description {
+        font-size: 14px;
+        text-align: center;
+    }
+    .feature-icon {
+        margin-bottom: 20px;
+    }
+
+    .testimonials-section {
+        padding: 50px 0;
+    }
+    .testimonials-grid {
+        padding-top: 25px;
+        
+        
+    }
+    .testimonial-card {
+        margin-bottom: 20px; 
+    }
+    .testimonial-card:last-child {
+        margin-bottom: 0;
+    }
+    .twitter-icon {
+        padding-bottom: 0; 
+        margin-top: -20px; 
+        margin-right: 5px; 
+    }
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .faq-section {
+        padding: 50px 0;
+    }
+    .faq-container {
+        padding-top: 25px;
+    }
+    .faq-item {
+        margin-bottom: 25px;
+    }
+    .faq-question {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .faq-answer {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .buy-section {
+        padding: 50px 0;
+    }
+    .buy-section .section-subheading{
+        padding-top: 10px;
+    }
+
+    
+    .subscribe-section {
+        padding: 40px 0;
+    }
+    .subscribe-form {
+        flex-direction: column; 
+        max-width: 90%;
+    }
+    .subscribe-input {
+        margin-bottom: 10px; 
+        width: 100%; 
+        box-sizing: border-box; 
+        text-align: center; 
+    }
+    .subscribe-button {
+        width: 100%; 
+        padding: 12px 20px; 
+    }
+
+    
+    .footer-section {
+        padding: 25px 0;
+    }
+    .footer-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .footer-copyright {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .footer-links { 
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .footer-link {
+        margin-left: 0;
+        margin: 6px 0; 
+        font-size: 13px;
+    }
+    .footer-social {
+        margin-top: 0; 
+    }
+    .footer-social .social-icon {
+        margin: 0 10px; 
+        font-size: 18px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px; 
+    }
+    .main-heading {
+        font-size: 26px; 
+    }
+    .sub-heading {
+        font-size: 13px;
+    }
+    .section-heading {
+        font-size: 24px;
+    }
+    .feature-heading {
+        font-size: 22px;
+    }
+    .feature-title {
+        font-size: 18px;
+    }
+    .faq-question {
+        font-size: 17px;
+    }
+    .button {
+        padding: 12px 20px; 
+        font-size: 13px;
+        width: 90%;
+    }
+    .buy-button, .buy-button-price, .watch-button {
+        font-size: 13px; 
+    }
+
+    .logo { 
+        max-width: 85px; 
+    }
+    .window-title {
+        font-size: 11px; 
+    }
+    .testimonial-text {
+        font-size: 13px;
+    }
+    .user-name {
+        font-size: 15px;
+    }
+    .tw-details {
+        font-size: 12px;
+    }
+    .subscribe-input, .subscribe-button {
+        font-size: 14px; 
+    }
+}
+
